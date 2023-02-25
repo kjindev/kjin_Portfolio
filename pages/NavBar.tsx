@@ -28,7 +28,7 @@ export default function NavBar({ navName, handleScrollView }: propsType) {
   };
 
   return (
-    <div className="w-[100%] h-[7vh] md:px-[10%] fixed bg-white">
+    <div className="w-[100%] h-[7vh] md:px-[10%] fixed bg-white z-[1]">
       <div
         ref={menuRef}
         className="menu-moving hidden fixed ml-[20%] w-[80%] h-[100vh] bg-black px-3 py-1 md:hidden z-[2] drop-shadow-2xl"

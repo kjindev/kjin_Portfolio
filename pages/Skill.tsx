@@ -1,11 +1,11 @@
 export default function Skill() {
   return (
-    <div className="w-[100%] md:h-[100vh] pt-[10vh] md:pt-0 flex flex-col justify-center items-center">
-      <div className="title-font text-2xl md:text-4xl">Skill</div>
-      <div className="flex flex-col md:flex-row items-center text-center">
-        <div className="m-5 w-[80vw] md:w-[20vw] md:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
+    <div className="w-[100%] h-[100vh] pt-[10vh] pc:pt-0 flex flex-col justify-center items-center">
+      <div className="title-font text-2xl pc:text-4xl">Skill</div>
+      <div className="flex flex-col pc:flex-row items-center text-center">
+        <div className="m-5 w-[80vw] tab:w-[50vw] pc:w-[20vw] pc:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
           <div className="h-[10%]">
-            <div className="title-font text-center text-lg md:text-2xl">
+            <div className="title-font text-center text-lg tab:text-xl">
               Strong
             </div>
             <div className="text-sm">꽤 다룰 줄 압니다 :)</div>
@@ -52,9 +52,9 @@ export default function Skill() {
             </div>
           </div>
         </div>
-        <div className="m-5 w-[80vw] md:w-[20vw] md:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
+        <div className="m-5 w-[80vw] tab:w-[50vw] pc:w-[20vw] pc:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
           <div className="h-[10%]">
-            <div className="title-font text-center text-lg md:text-2xl">
+            <div className="title-font text-center text-lg tab:text-xl">
               Knowledgeable
             </div>
             <div className="text-sm">어느 정도 알고 있습니다 :)</div>
@@ -88,9 +88,9 @@ export default function Skill() {
             </div>
           </div>
         </div>
-        <div className="m-5 w-[80vw]  md:w-[20vw] md:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
+        <div className="m-5 w-[80vw] tab:w-[50vw] pc:w-[20vw] pc:h-[50vh] bg-white drop-shadow-lg rounded-2xl p-5">
           <div className="h-[10%]">
-            <div className="title-font text-center text-lg md:text-2xl">
+            <div className="title-font text-center text-lg tab:text-xl">
               Experienced
             </div>
             <div className="text-sm">사용해본 적 있습니다 :)</div>

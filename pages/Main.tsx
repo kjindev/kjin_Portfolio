@@ -26,13 +26,16 @@ export default function Main() {
 
   return (
     <div className="w-[100%] h-[100vh] flex justify-center items-center">
-      <div>
-        <span ref={textRef} className="title-font text-2xl md:text-6xl"></span>
+      <div className="">
+        <span
+          ref={textRef}
+          className="title-font text-2xl xs:text-3xl sm:text-4xl md:text-5xl"
+        ></span>
         <span
           className={
             effectEnd
-              ? "link text-2xl md:text-6xl text-sky-300"
-              : "text-2xl md:text-6xl text-sky-300"
+              ? "blink ttext-2xl xs:text-3xl sm:text-4xl md:text-5xl text-sky-300"
+              : "text-2xl xs:text-3xl sm:text-4xl md:text-5xl text-sky-300"
           }
         >
           |
