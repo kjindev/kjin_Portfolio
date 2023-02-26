@@ -112,6 +112,50 @@ export default function Home() {
     }
   };
 
+  function closure() {
+    let page = 0;
+    function pagePlus() {
+      page = page + 1;
+    }
+    function pageMinus() {
+      page = page - 1;
+    }
+    function printPage() {
+      console.log(page);
+    }
+    return {
+      page,
+      pagePlus,
+      pageMinus,
+      printPage,
+    };
+  }
+
+  const pageClosure = closure();
+
+  console.log(pageClosure.pagePlus());
+
+  useEffect(() => {
+    if (window) {
+      window.addEventListener("wheel", (event: any) => {
+        let wheel = event.wheelDeltaY;
+        if (wheel < 0) {
+          pageClosure.pagePlus();
+          console.log(pageClosure.page);
+          console.log(wheel);
+        } else if (wheel > 0) {
+          pageClosure.pageMinus();
+        }
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    scrollRef.current[pageClosure.page]?.scrollIntoView({
+      behavior: "smooth",
+    });
+  }, [pageClosure.page]);
+
   return (
     <>
       <NavBar navName={navName} handleScrollView={handleScrollView} />
